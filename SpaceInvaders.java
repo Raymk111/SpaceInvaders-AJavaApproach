@@ -39,7 +39,7 @@ public class SpaceInvaders extends JFrame implements Runnable, KeyListener
 		icon = new ImageIcon(workingDirectory + "//Bullet.png");
 		bullet = icon.getImage();
 		
-		icon = new ImageIcon(workingDirectory + "//harold-O.jpg");
+		icon = new ImageIcon(workingDirectory + "//harold.png");
 		winner = icon.getImage();
 		
 		icon = new ImageIcon(workingDirectory + "//Alien_up.png");
@@ -177,6 +177,7 @@ public class SpaceInvaders extends JFrame implements Runnable, KeyListener
 			
 			if(numAlive == 0)
 			{
+				g.setColor(Color.white);
 				g.fillRect(0,  0,  800,  800);
 				g.drawImage(winner,  0, 0, null);
 				g.dispose();
